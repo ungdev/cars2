@@ -2,10 +2,15 @@ var app = require('http').createServer(handler)
 var io = require('socket.io')(app);
 var fs = require('fs');
 
-app.listen(80);
+app.listen(8080);
 
 function handler (req, res) {
-  fs.readFile(__dirname + '/index.html',
+  var url = req.url;
+  if (req.url === '/') {
+    url = '/index.html';
+  }
+
+  fs.readFile(__dirname + url,
   function (err, data) {
     if (err) {
       res.writeHead(500);
@@ -57,7 +62,7 @@ io.on('connection', function (socket) {
       t = null;
       socket.broadcast.emit('logout');
       console.log('Toury disconnected');
-    } else {
+    } else if (socket == k) {
       k = null;
       socket.broadcast.emit('logout');
       console.log('Koch disconnected');

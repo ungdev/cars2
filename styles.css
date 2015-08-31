@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+    font-family: sans-serif;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+.game {
+    height: 300px;
+    width: 100%;
+}
+
+.background {
+    background: url(road.jpg);
+    height: 100%;
+    width: 100%;
+}
+
+.toury {
+    background: url(toury.png) center center no-repeat;
+    background-size: 80%;
+    height: 55px;
+    position: relative;
+    top: 55px;
+    width: 55px;
+}
+
+.koch {
+    background: url(koch.png) center center no-repeat;
+    background-size: cover;
+    height: 55px;
+    position: relative;
+    top: 120px;
+    width: 55px;
+}
+
+main {
+    box-sizing: border-box;
+    height: calc(100% - 310px);
+    margin-top: 10px;
+    padding: 10px;
+}
+
+main select {
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+#lyricsShower, #letter {
+    font-family: monospace;
+}
+
+#letter {
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#lyricsShower {
+    padding: 30px;
+    -webkit-column-count: 2;
+    column-count: 2;
+}

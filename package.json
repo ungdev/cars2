@@ -1,0 +1,15 @@
+{
+  "name": "cars2",
+  "version": "1.0.0",
+  "description": "Village Asso UNG plan b",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Lucas Soulier, Gabriel Juchault",
+  "license": "MIT",
+  "homepage": "https://github.com/ungdev/cars2#readme",
+  "dependencies": {
+    "socket.io": "^1.3.6"
+  }
+}
