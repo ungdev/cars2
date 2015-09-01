@@ -133,4 +133,4 @@ String.prototype.setLetterAt = function (index_) {
 };
 
 // Disable backspace
-document.addEventListener('keydown', function (e) { e.preventDefault(); return false; });
+document.addEventListener('keydown', function (e) { if (e.which === 8) { e.preventDefault(); return false; } });
