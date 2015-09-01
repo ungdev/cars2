@@ -131,3 +131,6 @@ String.prototype.setLetterAt = function (index_) {
 
     return value;
 };
+
+// Disable backspace
+document.addEventListener('keydown', function (e) { e.preventDefault(); return false; });
