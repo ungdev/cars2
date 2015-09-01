@@ -3,9 +3,6 @@
 /* global window */
 
 window.songs = {
-                test: `Salut salut,<br>
-Okooko<br>
-Fin de la chanson`,
                 vicaire : `Chez nous le méchoui, c'est une coutume<br>
 Mon papa fait l'barbecue,<br>
 Ma maman fait le mouton,<br>
